@@ -28,6 +28,6 @@ while True:
     elif _unit["ID"].endswith("H"): # if the unit is a hero, it will print it in blue
         print(Fore.LIGHTCYAN_EX + _unit["name"] + Fore.RESET)
     else:
-        print(a["name"]) # this block of code should never run, but it's there incase
+        print(_unit["name"]) # this block of code should never run, but it's there incase
     print("\n\n")
     os.system("pause") # just to stop infinite summoning, remove this if you just want the z power
