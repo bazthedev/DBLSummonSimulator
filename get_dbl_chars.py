@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup as bs
 import os
 import time
 
-#https://legends.dbz.space/characters/618
-
 def get_ld_json(html):
     soup = bs(str(html), "html.parser")
     return json.loads("".join(soup.find("script", {"type": "application/ld+json"}).contents))
