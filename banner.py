@@ -188,7 +188,6 @@ class Banner:
                 if usr.remove_cc(self.prices[(self.step - 1)]) == False:
                     print("Not enough CC")
                     return []
-            print(str(self.prices[(self.step - 1)]))
             if self.step != 6:
                 for i in range(0, (int(self.prices[(self.step - 1)] / 100))):
                     pull = random.randint(0, 10000)
