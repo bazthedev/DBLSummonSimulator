@@ -31,6 +31,7 @@ class Account():
                     "units" : self.units,
                     "cc" : self.cc
                 }
+                print(self.id)
         with open("accounts.json", "w") as f:
             json.dump(accounts, f, indent=4)
         self.accounts = accounts
